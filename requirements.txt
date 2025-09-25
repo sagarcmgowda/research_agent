@@ -1,0 +1,14 @@
+# The Google GenAI SDK for interacting with the Gemini models
+google-genai
+
+# LangChain Community/Core (often helpful for agent orchestration and utilities)
+# Since you are likely using LangChain concepts for the Agent (e.g., tools, structure)
+langchain-core
+langchain-community
+
+# The library for the Tavily Search API, which acts as the agent's web search tool
+tavily-python
+
+# A popular library for managing and loading environment variables from a .env file
+# (Highly recommended for securely loading your API keys)
+python-dotenv
