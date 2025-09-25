@@ -28,5 +28,19 @@ An **AI-powered research agent** built in Python to generate structured, factual
 git clone [<YOUR_REPOSITORY_URL>](https://github.com/sagarcmgowda/research_agent.git)
 cd research_agent
 ---
-### Step 2: Create a Virtual Environment
 
+### Step 2: Create a Virtual Environment
+It's best practice to use a virtual environment to manage dependencies.
+
+```bash
+# Create the environment
+python -m venv .venv
+
+# Activate (Linux/macOS)
+source .venv/bin/activate
+
+# Activate (Windows CMD)
+.\.venv\Scripts\activate.bat
+
+# Activate (Windows PowerShell)
+.\.venv\Scripts\Activate.ps1
