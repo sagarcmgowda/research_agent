@@ -57,8 +57,12 @@ pip install -r requirements.txt
 The agent requires two API keys. You can set them as environment variables:
 
 Windows (Command Prompt):
+```bash
 set GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+```
+```bash
 set TAVILY_API_KEY=YOUR_TAVILY_API_KEY
+```
 
 ### 🛠️ Usage
 
