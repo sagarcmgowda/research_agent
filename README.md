@@ -25,8 +25,9 @@ An **AI-powered research agent** built in Python to generate structured, factual
 
 ### Step 1: Clone the Repository
 ```bash
-git clone [<YOUR_REPOSITORY_URL>](https://github.com/sagarcmgowda/research_agent.git)
+git clone https://github.com/sagarcmgowda/research_agent.git
 cd research_agent
+```
 ---
 
 ### Step 2: Create a Virtual Environment
@@ -44,3 +45,44 @@ source .venv/bin/activate
 
 # Activate (Windows PowerShell)
 .\.venv\Scripts\Activate.ps1
+```
+
+### Step 3: Install Dependencies
+Make sure your requirements.txt includes packages such as:
+google-genai, langchain-community, pydantic, tavily-python, python-dotenv
+```bash
+pip install -r requirements.txt
+```
+### tep 4: Set API Keys
+The agent requires two API keys. You can set them as environment variables:
+
+Windows (Command Prompt):
+set GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+set TAVILY_API_KEY=YOUR_TAVILY_API_KEY
+
+### 🛠️ Usage
+
+Run the agent via main.py.
+```bash
+python main.py
+```
+
+## Example Run
+
+(.venv) C:\path\to\research_agent>python main.py
+```bash
+==================================================
+WELCOME TO THE AI RESEARCH AGENT
+==================================================
+Enter your research question: Analyze the current regulatory landscape (e.g., EU's AI Act, US executive orders) governing the deployment of Generative AI models and detail the primary compliance challenges faced by large technology companies.
+--------------------------------------------------
+**Research Question:** Analyze the current regulatory landscape (e.g., EU's AI Act, US executive orders) governing the deployment of Generative AI models and detail the primary compliance challenges faced by large technology companies.
+--------------------------------------------------
+... (Agent performs research, search, and generation) ...
+
+==================================================
+**FINAL STRUCTURED RESEARCH REPORT**
+==================================================
+... (The detailed report output will appear here) ...
+==================================================
+```
